@@ -1,0 +1,31 @@
+:root {
+    --color-white: #fff;
+    --background-opacity: #20202062;
+    --font-normal: normal;
+    --font-bold: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(file/waitomo-glowworm-grottes-une.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(1.5rem);
+    border-bottom: 3px solid var(--color-white); ;
+    background-color: var(--background-opacity);
+    padding: 2%;
+}
+#header > p > a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 24px;
+}
