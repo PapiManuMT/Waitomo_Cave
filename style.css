@@ -16,16 +16,50 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 #header {
     display: flex;
     justify-content: space-around;
     backdrop-filter: blur(1.5rem);
     border-bottom: 3px solid var(--color-white); ;
     background-color: var(--background-opacity);
-    padding: 2%;
+    padding: 1%;
 }
 #header > p > a {
     text-decoration: none;
     color: var(--color-white);
-    font-size: 24px;
+    font-size: 18px;
+}
+
+#home_page {
+    color: var(--color-white);
+    font-size: 48px;
+    margin-left: 4%;
+}
+#div_home_page_button {
+    align-items: flex-end;
+}
+#home_page_button {
+    display: flex;
+    margin-left: 4%;
+    align-items: flex-end;
+}
+#home_page_button > p > button {
+    border: none;
+    pointer-events: stroke;
+    background: linear-gradient(90deg, #00B0A6 2.5%, #1DF8FA 100%);
+    border-radius: 10px;
+    height: 63px;
+    width: 260px;
+    font-size: 42px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+#home_page_button > p > button:hover {
+    background: linear-gradient(90deg, #1DF8FA  2.5%, #00B0A6 100%);
 }
