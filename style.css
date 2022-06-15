@@ -35,9 +35,6 @@ body {
     background-color: var(--background-opacity);
     padding: 1%;
 }
-header::after {
-        
-}
 #header > p > button {
     text-decoration: none;
     color: var(--color-white);
@@ -72,6 +69,10 @@ header::after {
 #home_page_button:hover {
     background: linear-gradient(90deg, #1DF8FA  2.5%, #00B0A6 100%);
 }
+#select_page_button {
+    width: 100vw;
+    height: 100vh;
+}
 
 .accueil_open {
     animation: fondu_apparition 750ms forwards;
@@ -83,7 +84,13 @@ header::after {
     animation: deplacement_gauche_apparition 1.5s forwards;
 }
 .header_disparition {
-    animation: ddeplacement_gauche_disparition 750ms forwards;
+    animation: deplacement_gauche_disparition 750ms forwards;
+}
+.select_page_apparition {
+    animation: fondu_content_apparition 750ms forwards;
+}
+.select_page_dispariton {
+    animation: fondu_disparition 750ms forwards
 }
 @keyframes fondu_disparition {
     from {
@@ -99,6 +106,16 @@ header::after {
         opacity: 1;
         display: flex;
         
+    }
+    from {
+        opacity: 0;
+    }
+}
+@keyframes fondu_content_apparition {
+    to {
+        opacity: 1;
+        display: flex;
+        backdrop-filter: blur(1.5rem);
     }
     from {
         opacity: 0;
