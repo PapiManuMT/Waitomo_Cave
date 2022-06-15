@@ -10,6 +10,7 @@ homePageButton.addEventListener('click', () => {
     accueil.classList.add('accueil_close')
     selectPage.classList.add('select_page_apparition');
     setTimeout(displayNone, 1500, accueil)
+    setTimeout(displayNone, 1500, header)
 })
 
 function displayNone(appletName) {
