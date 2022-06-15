@@ -5,6 +5,7 @@
     --font-bold: bold;
     --border-left: 4%;
 }
+.display_none {display: none;}
 
 body {
     margin: 0;
@@ -90,7 +91,7 @@ body {
     animation: fondu_content_apparition 750ms forwards;
 }
 .select_page_dispariton {
-    animation: fondu_disparition 750ms forwards
+    animation: fondu_disparition 750ms forwards;
 }
 @keyframes fondu_disparition {
     from {
