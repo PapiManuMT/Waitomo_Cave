@@ -24,23 +24,31 @@ body {
     height:100vh;
    
 }
+#accueil {
+    margin: 0;
+    padding: 0;
+}
 #header {
     display: flex;
     justify-content: space-around;
-    backdrop-filter: blur(1.5rem);
     border-bottom: 3px solid var(--color-white); ;
     background-color: var(--background-opacity);
     padding: 1%;
 }
-#header > p > a {
+header::after {
+        
+}
+#header > p > button {
     text-decoration: none;
     color: var(--color-white);
     font-size: 18px;
+    border: none;
+    background: none;
 }
 
 #home_page {
-    height: 100vh;
-    margin-bottom: 2%   ;
+    height: 85vh;
+    margin-bottom: 2%;
     color: var(--color-white);
     font-size: 48px;
     margin-left: var(--border-left);
@@ -63,4 +71,62 @@ body {
 
 #home_page_button:hover {
     background: linear-gradient(90deg, #1DF8FA  2.5%, #00B0A6 100%);
+}
+
+.accueil_open {
+    animation: fondu_apparition 750ms forwards;
+}
+.accueil_close {
+    animation: fondu_disparition  1.5s forwards;
+}
+.header_apparition {
+    animation: deplacement_gauche_apparition 1.5s forwards;
+}
+.header_disparition {
+    animation: ddeplacement_gauche_disparition 750ms forwards;
+}
+@keyframes fondu_disparition {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes fondu_apparition {
+    to {
+        opacity: 1;
+        display: flex;
+        
+    }
+    from {
+        opacity: 0;
+    }
+}
+@keyframes deplacement_gauche_apparition {
+    from {
+        position: relative;
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        left: 0;
+        opacity: 1;
+        backdrop-filter: blur(1.5rem);
+    }
+}
+@keyframes deplacement_gauche_disparition {
+    to {
+        position: relative;
+        left: -100%;
+        opacity: 0;
+        display: none;
+    }
+    from {
+        position: relative;
+        left: 0;
+        opacity: 1;
+    }
 }
