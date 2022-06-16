@@ -16,4 +16,3 @@ homePageButton.addEventListener('click', () => {
 function displayNone(appletName) {
     appletName.classList.add("display_none")
 }
-
