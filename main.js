@@ -4,13 +4,13 @@ header = document.getElementById('header');
 selectPage = document.getElementById('select_page');
 
 homePageButton.addEventListener('click', () => {
-    header.classList.remove('header_apparition');
-    header.classList.add('header_disparition');
+    // header.classList.remove('header_apparition');
+    // header.classList.add('header_disparition');
     accueil.classList.remove('accueil_open');
     accueil.classList.add('accueil_close')
     selectPage.classList.add('select_page_apparition');
     setTimeout(displayNone, 1500, accueil)
-    setTimeout(displayNone, 1500, header)
+    setTimeout(displayNone, 1500, header)   
 })
 
 function displayNone(appletName) {
