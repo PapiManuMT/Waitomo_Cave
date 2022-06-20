@@ -99,6 +99,23 @@ body {
     height: 41vh;
 }
 
+#page_1 {
+    width: 100vW;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+#page_1 > h2 {
+    font-size: 48px;
+}
+#page_1 > p {
+    width: 60vw;
+    font-size: 32px;
+}
+
 .accueil_open {
     animation: fondu_apparition 750ms forwards;
 }
