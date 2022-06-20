@@ -114,7 +114,13 @@ body {
 .select_page_apparition {
     animation: fondu_content_apparition 750ms forwards;
 }
-.select_page_dispariton {
+.select_page_disparition {
+    animation: fondu_content_disparition 750ms forwards;
+}
+.page_apparition {
+    animation: fondu_content_apparition 750ms forwards;
+}
+.page_disparition {
     animation: fondu_disparition 750ms forwards;
 }
 @keyframes fondu_disparition {
@@ -145,6 +151,19 @@ body {
     }
     from {
         opacity: 0;
+    }
+}
+@keyframes fondu_content_disparition {
+    from {
+        opacity: 1;
+        display: flex;
+        backdrop-filter: blur(1.5rem);
+        background-color: rgba(0, 0, 0, 0.315);
+    }
+    to {
+        opacity: 0;
+        backdrop-filter: blur(1.5rem);
+        background-color: rgba(0, 0, 0, 0.315);
     }
 }
 @keyframes deplacement_gauche_apparition {
