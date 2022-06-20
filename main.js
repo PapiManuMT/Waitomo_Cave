@@ -1,7 +1,9 @@
-homePageButton = document.getElementById('home_page_button');
-accueil = document.getElementById('accueil');
-header = document.getElementById('header');
-selectPage = document.getElementById('select_page');
+console.log("😎<<--PapiScript-->>")
+
+let homePageButton = document.getElementById('home_page_button');
+let accueil = document.getElementById('accueil');
+let header = document.getElementById('header');
+let selectPage = document.getElementById('select_page');
 
 function start() {
     selectPage.style.display="none";
