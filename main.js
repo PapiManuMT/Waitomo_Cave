@@ -4,9 +4,14 @@ let homePageButton = document.getElementById('home_page_button');
 let accueil = document.getElementById('accueil');
 let header = document.getElementById('header');
 let selectPage = document.getElementById('select_page');
+let page1 = document.getElementById('page_1')
+let bp1Access = document.getElementById("b_page_1_access")
+let bp2Access = document.getElementById("b_page_2_access")
+let bp3Access = document.getElementById("b_page_3_access")
 
 function start() {
     selectPage.style.display="none";
+    page1.style.display="none";
 }
 start()
 
@@ -19,6 +24,10 @@ homePageButton.addEventListener('click', () => {
     setTimeout(displayNone, 1500, accueil)
     setTimeout(displayFlex, 1500, selectPage)
     // setTimeout(displayNone, 1500, header)
+})
+
+bp1Access.addEventListener( 'click', () => {
+
 })
 
 function displayNone(appletName) {
