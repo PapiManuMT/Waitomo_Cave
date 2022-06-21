@@ -26,17 +26,23 @@ homePageButton.addEventListener('click', () => {
     setTimeout(displayNone, 1500, accueil)
     setTimeout(displayFlex, 1500, selectPage)
 })
-
 bp1Access.addEventListener( 'click', () => {
-    selectPage.classList.remove("select_page_apparition")
-    selectPage.classList.add("select_page_disparition")
-    p1.classList.add("page_apparition")
-    setTimeout(displayNone, 1500, selectPage)
-    setTimeout(displayFlex, 1500, p1)
-
-
+    event(p1)
+})
+bp2Access.addEventListener( 'click', () => {
+    event(p2)
+})
+bp3Access.addEventListener( 'click', () => {
+    event(p3)
 })
 
+function event(p) {
+    selectPage.classList.remove("select_page_apparition")
+    selectPage.classList.add("select_page_disparition")
+    p.classList.add("page_apparition")
+    setTimeout(displayNone, 1500, selectPage)
+    setTimeout(displayFlex, 1500, p)
+}
 function displayNone(appletName) {
     appletName.style.display='none';
 }
