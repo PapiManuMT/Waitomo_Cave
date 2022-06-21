@@ -7,11 +7,11 @@ let selectPage = document.getElementById('select_page');
 let bp1Access = document.getElementById("b_page_1_access")
 let bp2Access = document.getElementById("b_page_2_access")
 let bp3Access = document.getElementById("b_page_3_access")
-let page1 = document.getElementById('page_1')
+let page = document.querySelector('.page')
 
 function start() {
     selectPage.style.display="none";
-    page1.style.display="none";
+    page.style.display="none";
 }
 start()
 
@@ -29,9 +29,9 @@ homePageButton.addEventListener('click', () => {
 bp1Access.addEventListener( 'click', () => {
     selectPage.classList.remove("select_page_apparition")
     selectPage.classList.add("select_page_disparition")
-    page1.classList.add("page_apparition")
+    page.classList.add("page_apparition")
     setTimeout(displayNone, 1500, selectPage)
-    setTimeout(displayFlex, 1500, page1)
+    setTimeout(displayFlex, 1500, page)
 
 
 })
