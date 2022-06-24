@@ -1,6 +1,5 @@
 console.log("😎<<--PapiScript-->>")
 
-const header = document.getElementById('header');
 const bAccueil = document.getElementById("b_accueil")
 const bWaitomo = document.getElementById("b_waitomo")
 const bRuakuri = document.getElementById("b_ruakuri")
@@ -27,6 +26,21 @@ function start() {
 }
 start()
 
+bAccueil.addEventListener('click', () => {
+    selectPage.classList.remove("select_page_apparition")
+    selectPage.classList.add("select_page_disparition")
+    p1.classList.remove("page_apparition")
+    p1.classList.add("page_disparition")
+    p2.classList.remove("page_apparition")
+    p2.classList.add("page_disparition")
+    p3.classList.remove("page_apparition")
+    p3.classList.add("page_disparition")
+    accueil.classList.add('accueil_open')
+    setTimeout(displayNone, 1500, selectPage, p1, p2, p3)
+    // setTimeout(displayFlex, 1500, p1)
+    // setTimeout(displayFlex, 1500, p2)
+    // setTimeout(displayFlex, 1500, p3)
+})
 
 homePageButton.addEventListener('click', () => {
     accueil.classList.remove('accueil_open');
