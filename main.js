@@ -1,13 +1,20 @@
 console.log("😎<<--PapiScript-->>")
 
+const header = document.getElementById('header');
+const bAccueil = document.getElementById("b_accueil")
+const bWaitomo = document.getElementById("b_waitomo")
+const bRuakuri = document.getElementById("b_ruakuri")
+const bRafting = document.getElementById("b_rafting")
+const bAbout = document.getElementById("b_about")
 
 const homePageButton = document.getElementById('home_page_button');
 const accueil = document.getElementById('accueil');
-const header = document.getElementById('header');
+
 const selectPage = document.getElementById('select_page');
 const bp1Access = document.getElementById("b_page_1_access")
 const bp2Access = document.getElementById("b_page_2_access")
 const bp3Access = document.getElementById("b_page_3_access")
+
 const p1 = document.getElementById('p1')
 const p2 = document.getElementById('p2')
 const p3 = document.getElementById('p3')
