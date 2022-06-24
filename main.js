@@ -1,15 +1,16 @@
 console.log("😎<<--PapiScript-->>")
 
-let homePageButton = document.getElementById('home_page_button');
-let accueil = document.getElementById('accueil');
-let header = document.getElementById('header');
-let selectPage = document.getElementById('select_page');
-let bp1Access = document.getElementById("b_page_1_access")
-let bp2Access = document.getElementById("b_page_2_access")
-let bp3Access = document.getElementById("b_page_3_access")
-let p1 = document.getElementById('p1')
-let p2 = document.getElementById('p2')
-let p3 = document.getElementById('p3')
+
+const homePageButton = document.getElementById('home_page_button');
+const accueil = document.getElementById('accueil');
+const header = document.getElementById('header');
+const selectPage = document.getElementById('select_page');
+const bp1Access = document.getElementById("b_page_1_access")
+const bp2Access = document.getElementById("b_page_2_access")
+const bp3Access = document.getElementById("b_page_3_access")
+const p1 = document.getElementById('p1')
+const p2 = document.getElementById('p2')
+const p3 = document.getElementById('p3')
 
 function start() {
     selectPage.style.display="none";
@@ -18,6 +19,7 @@ function start() {
     p3.style.display="none";
 }
 start()
+
 
 homePageButton.addEventListener('click', () => {
     accueil.classList.remove('accueil_open');
