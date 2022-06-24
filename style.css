@@ -42,6 +42,19 @@ body {
     border: none;
     background: none;
 }
+#head_page {
+    display: flex;
+    justify-content: space-around;
+}
+#head_page > p > button {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 #home_page {
     height: 85vh;
