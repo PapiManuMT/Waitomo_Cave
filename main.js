@@ -36,15 +36,19 @@ bAccueil.addEventListener('click', () => {
     p3.classList.remove("page_apparition")
     p3.classList.add("page_disparition")
     accueil.classList.add('accueil_open')
-    setTimeout(displayNone, 1500, selectPage, p1, p2, p3)
-    // setTimeout(displayFlex, 1500, p1)
-    // setTimeout(displayFlex, 1500, p2)
-    // setTimeout(displayFlex, 1500, p3)
+    setTimeout(displayNone, 1500, selectPage)
+    setTimeout(displayNone, 1500, p1)
+    setTimeout(displayNone, 1500, p2)
+    setTimeout(displayNone, 1500, p3)
+    setTimeout(accueil.classList.remove("accueil_close"))
+    setTimeout(accueil.classList.add("accueil_open"))
+    setTimeout(displayFlex, 1500, accueil)
 })
 
 homePageButton.addEventListener('click', () => {
     accueil.classList.remove('accueil_open');
     accueil.classList.add('accueil_close')
+    selectPage.classList.remove("select_page_disparition")
     selectPage.classList.add('select_page_apparition');
     setTimeout(displayNone, 1500, accueil)
     setTimeout(displayFlex, 1500, selectPage)
@@ -62,6 +66,7 @@ bp3Access.addEventListener( 'click', () => {
 function event(p) {
     selectPage.classList.remove("select_page_apparition")
     selectPage.classList.add("select_page_disparition")
+    p.classList.remove('page_disparition')
     p.classList.add("page_apparition")
     setTimeout(displayNone, 1500, selectPage)
     setTimeout(displayFlex, 1500, p)
