@@ -1,5 +1,6 @@
 console.log("😎<<--PapiScript-->>")
 
+const head = document.querySelectorAll('head')
 const bAccueil = document.getElementById("b_accueil")
 const bWaitomo = document.getElementById("b_waitomo")
 const bRuakuri = document.getElementById("b_ruakuri")
@@ -18,28 +19,39 @@ const p1 = document.getElementById('p1')
 const p2 = document.getElementById('p2')
 const p3 = document.getElementById('p3')
 
+const page = document.querySelectorAll(".page")
+
 function start() {
     selectPage.style.display="none";
     p1.style.display="none";
     p2.style.display="none";
     p3.style.display="none";
 }
+console.log(page)
 start()
+function fAccueil() {
+    page.forEach((pages, index) => {
+        pages.classList.remove("page_apparition")
+        pages.classList.add("page_disparition")
+        setTimeout(displayNone, 1500, pages)
+    })
+}
 
 bAccueil.addEventListener('click', () => {
+    fAccueil()
     selectPage.classList.remove("select_page_apparition")
     selectPage.classList.add("select_page_disparition")
-    p1.classList.remove("page_apparition")
-    p1.classList.add("page_disparition")
-    p2.classList.remove("page_apparition")
-    p2.classList.add("page_disparition")
-    p3.classList.remove("page_apparition")
-    p3.classList.add("page_disparition")
+    // p1.classList.remove("page_apparition")
+    // p1.classList.add("page_disparition")
+    // p2.classList.remove("page_apparition")
+    // p2.classList.add("page_disparition")
+    // p3.classList.remove("page_apparition")
+    // p3.classList.add("page_disparition")
     accueil.classList.add('accueil_open')
     setTimeout(displayNone, 1500, selectPage)
-    setTimeout(displayNone, 1500, p1)
-    setTimeout(displayNone, 1500, p2)
-    setTimeout(displayNone, 1500, p3)
+    // setTimeout(displayNone, 1500, p1)
+    // setTimeout(displayNone, 1500, p2)
+    // setTimeout(displayNone, 1500, p3)
     setTimeout(accueil.classList.remove("accueil_close"))
     setTimeout(accueil.classList.add("accueil_open"))
     setTimeout(displayFlex, 1500, accueil)
