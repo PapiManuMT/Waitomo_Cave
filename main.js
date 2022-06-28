@@ -44,15 +44,24 @@ function fButton() {
 
 bAccueil.addEventListener('click', () => {
     fButton()
-    setTimeout(accueil.classList.remove("accueil_close"))
-    setTimeout(accueil.classList.add("accueil_open"))
+    accueil.classList.remove("accueil_close")
+    accueil.classList.add("accueil_open")
     setTimeout(displayFlex, 1500, accueil)
 })
 bWaitomo.addEventListener('click', () => {
     fButton()
-    setTimeout(p1.classList.remove('page_disparition'))
-    setTimeout(p1.classList.add('page_apparition'))
+    classList(p1)
     setTimeout(displayFlex, 1500, p1)
+})
+bRuakuri.addEventListener('click', () => {
+    fButton()
+    classList(p2)
+    setTimeout(displayFlex, 1500, p2)
+})
+bRafting.addEventListener('click', () => {
+    fButton()
+    classList(p3)
+    setTimeout(displayFlex, 1500, p3)
 })
 
 homePageButton.addEventListener('click', () => {
@@ -86,4 +95,8 @@ function displayNone(appletName) {
 }
 function displayFlex(appletName) {
     appletName.style.display="flex";
+}
+function classList(appletName) {
+    appletName.classList.remove('page_disparition')
+    appletName.classList.add('page_apparition')
 }
