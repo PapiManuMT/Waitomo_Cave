@@ -18,14 +18,16 @@ const bp3Access = document.getElementById("b_page_3_access")
 const p1 = document.getElementById('p1')
 const p2 = document.getElementById('p2')
 const p3 = document.getElementById('p3')
-
 const page = document.querySelectorAll(".page")
+
+const footer = document.getElementById('footer')
 
 function start() {
     displayNone(selectPage)
     page.forEach((pages ) => {
         displayNone(pages)
     })
+    displayNone(footer)
 }
 start()
 function fButton() {
@@ -62,6 +64,10 @@ bRafting.addEventListener('click', () => {
     fButton()
     classList(p3)
     setTimeout(displayFlex, 1500, p3)
+})
+bAbout.addEventListener('click', () => {
+    fButton()
+    setTimeout(displayFlex, 1500, footer)
 })
 
 homePageButton.addEventListener('click', () => {
