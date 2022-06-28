@@ -22,12 +22,11 @@ const p3 = document.getElementById('p3')
 const page = document.querySelectorAll(".page")
 
 function start() {
-    selectPage.style.display="none";
-    p1.style.display="none";
-    p2.style.display="none";
-    p3.style.display="none";
+    displayNone(selectPage)
+    page.forEach((pages ) => {
+        displayNone(pages)
+    })
 }
-console.log(page)
 start()
 function fAccueil() {
     page.forEach((pages, index) => {
@@ -41,17 +40,8 @@ bAccueil.addEventListener('click', () => {
     fAccueil()
     selectPage.classList.remove("select_page_apparition")
     selectPage.classList.add("select_page_disparition")
-    // p1.classList.remove("page_apparition")
-    // p1.classList.add("page_disparition")
-    // p2.classList.remove("page_apparition")
-    // p2.classList.add("page_disparition")
-    // p3.classList.remove("page_apparition")
-    // p3.classList.add("page_disparition")
     accueil.classList.add('accueil_open')
     setTimeout(displayNone, 1500, selectPage)
-    // setTimeout(displayNone, 1500, p1)
-    // setTimeout(displayNone, 1500, p2)
-    // setTimeout(displayNone, 1500, p3)
     setTimeout(accueil.classList.remove("accueil_close"))
     setTimeout(accueil.classList.add("accueil_open"))
     setTimeout(displayFlex, 1500, accueil)
