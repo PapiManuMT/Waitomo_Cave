@@ -41,6 +41,7 @@ function fButton() {
         setTimeout(displayNone, 1500, pages)
         setTimeout(displayNone, 1500, selectPage)
         setTimeout(displayNone, 1500, accueil)
+        setTimeout(displayNone, 1500, footer)
     })
 }
 
