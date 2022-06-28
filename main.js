@@ -28,23 +28,31 @@ function start() {
     })
 }
 start()
-function fAccueil() {
+function fButton() {
     page.forEach((pages, index) => {
+        accueil.classList.remove("accueil_open")
+        accueil.classList.add("accueil_close")
         pages.classList.remove("page_apparition")
         pages.classList.add("page_disparition")
+        selectPage.classList.remove("select_page_apparition")
+        selectPage.classList.add("select_page_disparition")
         setTimeout(displayNone, 1500, pages)
+        setTimeout(displayNone, 1500, selectPage)
+        setTimeout(displayNone, 1500, accueil)
     })
 }
 
 bAccueil.addEventListener('click', () => {
-    fAccueil()
-    selectPage.classList.remove("select_page_apparition")
-    selectPage.classList.add("select_page_disparition")
-    accueil.classList.add('accueil_open')
-    setTimeout(displayNone, 1500, selectPage)
+    fButton()
     setTimeout(accueil.classList.remove("accueil_close"))
     setTimeout(accueil.classList.add("accueil_open"))
     setTimeout(displayFlex, 1500, accueil)
+})
+bWaitomo.addEventListener('click', () => {
+    fButton()
+    setTimeout(p1.classList.remove('page_disparition'))
+    setTimeout(p1.classList.add('page_apparition'))
+    setTimeout(displayFlex, 1500, p1)
 })
 
 homePageButton.addEventListener('click', () => {
