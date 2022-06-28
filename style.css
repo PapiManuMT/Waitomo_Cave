@@ -170,6 +170,38 @@ body {
     background-color: white;
 }
 
+#footer {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_background {
+    background-color: rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(100px);
+    display: flex;
+    padding: 2.5rem;
+}
+#g_footer {
+    display: flex;
+    flex-direction: column;
+}
+#g_footer > h2 {
+    font-size: 48px;
+}
+#g_footer > p {
+    font-size: 24px;
+}
+#d_footer {
+    display: flex;
+    flex-direction: column;
+}
+#d_footer > h2 {
+    font-size: 48px;
+}
+
 .accueil_open {
     animation: fondu_apparition 750ms forwards;
 }
@@ -216,12 +248,12 @@ body {
     to {
         opacity: 1;
         display: flex;
-        backdrop-filter: blur(1.5rem);
+        backdrop-filter: blur(100px);
         background-color: rgba(0, 0, 0, 0.315);
     }
     from {
         opacity: 0;
-        backdrop-filter: blur(1.5rem);
+        backdrop-filter: blur(100px);
         background-color: rgba(0, 0, 0, 0.315);
     }
 }
@@ -229,12 +261,12 @@ body {
     from {
         opacity: 1;
         display: flex;
-        backdrop-filter: blur(1.5rem);
+        backdrop-filter: blur(100px);
         background-color: rgba(0, 0, 0, 0.315);
     }
     to {
         opacity: 0;
-        backdrop-filter: blur(1.5rem);
+        backdrop-filter: blur(100px);
         background-color: rgba(0, 0, 0, 0.315);
     }
 }
@@ -248,7 +280,7 @@ body {
         position: relative;
         left: 0;
         opacity: 1;
-        backdrop-filter: blur(1.5rem);
+        backdrop-filter: blur(100px);
         background-color: rgba(0, 0, 0, 0.315);
     }
 }
