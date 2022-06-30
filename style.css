@@ -208,6 +208,16 @@ body {
 #d_footer > p {
     text-align: center;
 }
+input {
+    border: none;
+    height: 40px;
+    background-color: #505050;
+    margin-top: 40px;
+    font-size: 32px;
+    color: white;
+    padding-left: 20px;
+    border-radius: 10px;
+}
 
 .accueil_open {
     animation: fondu_apparition 750ms forwards;
