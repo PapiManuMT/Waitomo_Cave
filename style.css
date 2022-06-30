@@ -190,9 +190,15 @@ body {
 }
 #g_footer > h2 {
     font-size: 48px;
+    margin: 0;
 }
 #g_footer > p {
     font-size: 24px;
+}
+#barre {
+    margin: 0 4% 0 4%;
+    background-color: black;
+    width: 1px;
 }
 #d_footer {
     display: flex;
@@ -224,7 +230,7 @@ body {
     animation: fondu_content_apparition 750ms forwards;
 }
 .page_disparition {
-    animation: fondu_disparition 750ms forwards;
+    animation: fondu_content_disparition 750ms forwards;
 }
 @keyframes fondu_disparition {
     from {
