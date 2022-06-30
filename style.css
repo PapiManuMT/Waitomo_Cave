@@ -179,8 +179,6 @@ body {
     align-items: center;
 }
 #footer_background {
-    background-color: rgba(255, 255, 255, 0.46);
-    backdrop-filter: blur(100px);
     display: flex;
     padding: 2.5rem;
 }
@@ -218,7 +216,7 @@ body {
     animation: deplacement_gauche_apparition 1.5s forwards;
 }
 .header_disparition {
-    animation: deplacement_gauche_disparition 750ms forwards;
+    animation: deplacement_gauche_disparition 1.5s forwards;
 }
 .select_page_apparition {
     animation: fondu_content_apparition 750ms forwards;
