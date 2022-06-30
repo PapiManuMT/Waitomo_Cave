@@ -21,6 +21,7 @@ const p3 = document.getElementById('p3')
 const page = document.querySelectorAll(".page")
 
 const footer = document.getElementById('footer')
+const footerBackground= document.getElementById('footer_background')
 
 function start() {
     displayNone(selectPage)
@@ -28,6 +29,7 @@ function start() {
         displayNone(pages)
     })
     displayNone(footer)
+    classList_footer(footerBackground)
 }
 start()
 function fButton() {
@@ -38,6 +40,8 @@ function fButton() {
         pages.classList.add("page_disparition")
         selectPage.classList.remove("select_page_apparition")
         selectPage.classList.add("select_page_disparition")
+        footer.classList.add('page_disparition')
+        footer.classList.remove("page_apparition")
         setTimeout(displayNone, 1500, pages)
         setTimeout(displayNone, 1500, selectPage)
         setTimeout(displayNone, 1500, accueil)
@@ -68,7 +72,9 @@ bRafting.addEventListener('click', () => {
 })
 bAbout.addEventListener('click', () => {
     fButton()
+    classList(footer)
     setTimeout(displayFlex, 1500, footer)
+
 })
 
 homePageButton.addEventListener('click', () => {
@@ -106,4 +112,8 @@ function displayFlex(appletName) {
 function classList(appletName) {
     appletName.classList.remove('page_disparition')
     appletName.classList.add('page_apparition')
+}
+function classList_footer(appletName) {
+    appletName.classList.remove("select_page_disparition")
+    appletName.classList.add("select_page_apparition")
 }
