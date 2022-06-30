@@ -195,7 +195,7 @@ body {
 }
 #barre {
     margin: 0 4% 0 4%;
-    background-color: black;
+    background-color: white;
     width: 1px;
 }
 #d_footer {
@@ -204,6 +204,9 @@ body {
 }
 #d_footer > h2 {
     font-size: 48px;
+}
+#d_footer > p {
+    text-align: center;
 }
 
 .accueil_open {
@@ -298,5 +301,21 @@ body {
         position: relative;
         left: 0;
         opacity: 1;
+    }
+}
+
+/*Animation temporaire*/
+
+#construction {
+    animation: appdpp 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes appdpp {
+    from {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
     }
 }
