@@ -114,6 +114,6 @@ function classList(appletName) {
     appletName.classList.add('page_apparition')
 }
 function classList_footer(appletName) {
-    appletName.classList.remove("select_page_disparition")
-    appletName.classList.add("select_page_apparition")
+    appletName.classList.remove("header_disparition")
+    appletName.classList.add("header_apparition")
 }
