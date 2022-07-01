@@ -232,18 +232,23 @@ input {
     margin-top: 40px;
     font-size: 32px;
     color: white;
-    border-radius: 10px;
 }
 #input_email {
     padding-left: 20px;
+    border-radius: 10px 0 0 10px;
 }
 #submit {
-    border: solid 3px #00afa6;
+    background-color: #00afa6;
     height: 60px;
     box-sizing: border-box;
     display: flex;
-    position: relative;
-    left: -30px;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+#submit:hover {
+    background-color: white;
+    color: #00afa6;
 }
 #carte {
     display: flex;
