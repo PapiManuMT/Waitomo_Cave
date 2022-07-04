@@ -286,6 +286,7 @@ input {
 .page_disparition {
     animation: fondu_content_disparition 750ms forwards;
 }
+
 @keyframes fondu_disparition {
     from {
         opacity: 1;
@@ -354,6 +355,18 @@ input {
         position: relative;
         left: 0;
         opacity: 1;
+    }
+}
+@keyframes button_header_animation {
+    from {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+    to {
+        position: relative;
+        top: -4px;
+        opacity: 80%;
     }
 }
 @keyframes appdpp {
