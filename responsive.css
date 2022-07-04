@@ -1,0 +1,17 @@
+@media screen and (max-width: 990px){
+    #home_page {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 2.5rem;
+        box-sizing: border-box;
+    }
+    #select_page {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 565px){
+    #home_page {
+        font-size: 2rem;
+    }
+}

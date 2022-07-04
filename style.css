@@ -265,7 +265,7 @@ input {
 #construction {
     animation: appdpp 1s ease-in-out infinite alternate;
     text-align: center;
-    margin-top: 120px;
+    margin: 20%;
 }
 
 .accueil_open {
