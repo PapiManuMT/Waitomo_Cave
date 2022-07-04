@@ -288,6 +288,9 @@ input {
 .page_apparition {
     animation: fondu_content_apparition 750ms forwards;
 }
+.page_disparition {
+    animation: fondu_content_disparition 750ms forwards;
+}
 
 @keyframes fondu_disparition {
     from {
