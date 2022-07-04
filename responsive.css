@@ -9,6 +9,10 @@
     #select_page {
         flex-wrap: wrap;
     }
+    .page > p > img {
+        width: 100%;
+        height: auto;
+    }
 }
 @media screen and (max-width: 565px){
     #home_page {
