@@ -104,6 +104,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
 }
 #select_page > p > button {
     border: none;
@@ -291,6 +292,12 @@ input {
 .page_disparition {
     animation: fondu_content_disparition 750ms forwards;
 }
+.select_apparition {
+    animation: element_droite_apparition 750ms forwards;
+}
+.select_disparition {
+    animation: element_droite_disparition 750ms forwards;
+}
 
 @keyframes fondu_disparition {
     from {
@@ -359,6 +366,18 @@ input {
     from {
         position: relative;
         left: 0;
+        opacity: 1;
+    }
+}
+@keyframes element_droite_apparition {
+    from {
+        position: relative;
+        right: -100%;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        right: 0;
         opacity: 1;
     }
 }
