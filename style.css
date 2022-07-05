@@ -104,7 +104,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 #select_page > p > button {
     border: none;
