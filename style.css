@@ -19,12 +19,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+#background {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     min-height: 100vh;
     height: 100%;
-   
 }
 #accueil {
     margin: 0;
@@ -298,6 +299,9 @@ input {
 .select_disparition {
     animation: element_droite_disparition 750ms forwards;
 }
+.backdrop_filter_apparition {
+    animation: backdrop_filter 750ms forwards;
+}
 
 @keyframes fondu_disparition {
     from {
@@ -387,5 +391,23 @@ input {
     }
     to {
         opacity: 0;
+    }
+}
+@keyframes backdrop_filter_apparition {
+    from {
+        background: none;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.315);
+        backdrop-filter: blur(100px);
+    }
+}
+@keyframes backdrop_filter_disparition {
+    to {
+        background: none;
+    }
+    from {
+        background-color: rgba(0, 0, 0, 0.315);
+        backdrop-filter: blur(100px);
     }
 }

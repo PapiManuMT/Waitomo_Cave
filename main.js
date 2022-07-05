@@ -1,5 +1,7 @@
 console.log("😎<<--PapiScript-->>")
 
+const background = document.getElementById('background')
+
 const head = document.querySelectorAll('head')
 const bAccueil = document.getElementById("b_accueil")
 const bWaitomo = document.getElementById("b_waitomo")
@@ -30,6 +32,7 @@ function start() {
     })
     displayNone(footer)
     classList_footer(footerBackground)
+    backdropFilterDel()
 }
 start()
 function fButton() {
@@ -54,6 +57,7 @@ bAccueil.addEventListener('click', () => {
     accueil.classList.remove("accueil_close")
     accueil.classList.add("accueil_open")
     setTimeout(displayFlex, 1500, accueil)
+    backdropFilterDel()
 })
 bWaitomo.addEventListener('click', () => {
     fButton()
@@ -74,6 +78,7 @@ bAbout.addEventListener('click', () => {
     fButton()
     classList(footer)
     setTimeout(displayFlex, 1500, footer)
+    backdropFilterAdd()
 
 })
 
@@ -116,4 +121,12 @@ function classList(appletName) {
 function classList_footer(appletName) {
     appletName.classList.remove("header_disparition")
     appletName.classList.add("header_apparition")
+}
+function backdropFilterAdd() {
+    background.classList.remove("backdrop_filter_disparition")
+    background.classList.add('backdrop_filter_apparition')
+}
+function backdropFilterDel() {
+    background.classList.remove('background_filter_apparition')
+    background.classList.add('background_filter_disparition')
 }
