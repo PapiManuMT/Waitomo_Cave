@@ -38,6 +38,9 @@
         box-sizing: border-box;
         margin: 0;
     }
+    #home_page_button {
+        margin-bottom: 40px;
+    }
     #select_page {
         flex-wrap: wrap;
         height: 100vh;
