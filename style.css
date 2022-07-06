@@ -299,11 +299,11 @@ input {
 .select_disparition {
     animation: element_droite_disparition 750ms forwards;
 }
-.backdrop_filter_apparition {
-    animation: backdrop_filter_apparition 750ms forwards;
+.bg_changer_on {
+    animation: bg_changer_on 750ms forwards;
 }
-.backdrop_filter_disparition {
-    animation: backdrop_filter_disparition 750ms forwards;
+.bg_changer_off {
+    animation: bg_changer_off 750ms forwards;
 }
 .blur_on {
     animation: image_background_changer_blur 750ms forwards;
@@ -402,7 +402,7 @@ input {
         opacity: 0;
     }
 }
-@keyframes backdrop_filter_apparition {
+@keyframes bg_changer_on {
     from {
         background: none;
     }
@@ -411,7 +411,7 @@ input {
         /*backdrop-filter: blur(100px);*/
     }
 }
-@keyframes backdrop_filter_disparition {
+@keyframes bg_changer_off {
     to {
         background: none;
     }

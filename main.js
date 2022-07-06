@@ -58,30 +58,35 @@ bAccueil.addEventListener('click', () => {
     accueil.classList.remove("accueil_close")
     accueil.classList.add("accueil_open")
     setTimeout(displayFlex, 1500, accueil)
+    bgChangerOff(background)
     blurOff(content)
 })
 bWaitomo.addEventListener('click', () => {
     fButton()
     classList(p1)
     setTimeout(displayFlex, 1500, p1)
+    bgChangerOn(background)
     blurOn(content)
 })
 bRuakuri.addEventListener('click', () => {
     fButton()
     classList(p2)
     setTimeout(displayFlex, 1500, p2)
+    bgChangerOn(background)
     blurOn(content)
 })
 bRafting.addEventListener('click', () => {
     fButton()
     classList(p3)
     setTimeout(displayFlex, 1500, p3)
+    bgChangerOn(background)
     blurOn(content)
 })
 bAbout.addEventListener('click', () => {
     fButton()
     classList(footer)
     setTimeout(displayFlex, 1500, footer)
+    bgChangerOn(background)
     blurOn(content)
 
 })
@@ -93,6 +98,7 @@ homePageButton.addEventListener('click', () => {
     selectPage.classList.add('select_page_apparition');
     setTimeout(displayNone, 1500, accueil)
     setTimeout(displayFlex, 1500, selectPage)
+    bgChangerOn(background)
     blurOn(content)
 })
 bp1Access.addEventListener( 'click', () => {
@@ -127,13 +133,13 @@ function classList_footer(appletName) {
     appletName.classList.remove("header_disparition")
     appletName.classList.add("header_apparition")
 }
-function backdropFilterAdd() {
-    background.classList.remove("backdrop_filter_disparition")
-    background.classList.add('backdrop_filter_apparition')
+function bgChangerOn(appletName) {
+    appletName.classList.remove("bg_changer_off")
+    appletName.classList.add('bg_changer_on')
 }
-function backdropFilterDel() {
-    background.classList.remove('backdrop_filter_apparition')
-    background.classList.add('backdrop_filter_disparition')
+function bgChangerOff(appletName) {
+    appletName.classList.remove('bg_changer_on')
+    appletName.classList.add('bg_changer_off')
 }
 function blurOn(appletName) {
     appletName.classList.remove('blur_off')
