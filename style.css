@@ -73,6 +73,8 @@ body {
 }
 
 #home_page {
+    height: 80vh;
+    overflow: hidden;
     margin-bottom: 2%;
     color: var(--color-white);
     font-size: 48px;
@@ -187,7 +189,6 @@ body {
 }
 
 #footer {
-    width: 100%;
     color: white;
     display: flex;
     justify-content: center;

@@ -40,6 +40,7 @@
     }
     #select_page {
         flex-wrap: wrap;
+        height: 100vh;
     }
     .page  > img {
         width: 40%;
