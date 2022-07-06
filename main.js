@@ -1,8 +1,10 @@
 console.log("😎<<--PapiScript-->>")
 
 const background = document.getElementById('background')
+const content = document.getElementById('content')
 
-const head = document.querySelectorAll('head')
+// const head = document.querySelectorAll('head')
+const header = document.getElementById('header')
 const bAccueil = document.getElementById("b_accueil")
 const bWaitomo = document.getElementById("b_waitomo")
 const bRuakuri = document.getElementById("b_ruakuri")
@@ -32,7 +34,6 @@ function start() {
     })
     displayNone(footer)
     classList_footer(footerBackground)
-    backdropFilterDel()
 }
 start()
 function fButton() {
@@ -57,28 +58,31 @@ bAccueil.addEventListener('click', () => {
     accueil.classList.remove("accueil_close")
     accueil.classList.add("accueil_open")
     setTimeout(displayFlex, 1500, accueil)
-    backdropFilterDel()
+    blurOff(content)
 })
 bWaitomo.addEventListener('click', () => {
     fButton()
     classList(p1)
     setTimeout(displayFlex, 1500, p1)
+    blurOn(content)
 })
 bRuakuri.addEventListener('click', () => {
     fButton()
     classList(p2)
     setTimeout(displayFlex, 1500, p2)
+    blurOn(content)
 })
 bRafting.addEventListener('click', () => {
     fButton()
     classList(p3)
     setTimeout(displayFlex, 1500, p3)
+    blurOn(content)
 })
 bAbout.addEventListener('click', () => {
     fButton()
     classList(footer)
     setTimeout(displayFlex, 1500, footer)
-    backdropFilterAdd()
+    blurOn(content)
 
 })
 
@@ -89,6 +93,7 @@ homePageButton.addEventListener('click', () => {
     selectPage.classList.add('select_page_apparition');
     setTimeout(displayNone, 1500, accueil)
     setTimeout(displayFlex, 1500, selectPage)
+    blurOn(content)
 })
 bp1Access.addEventListener( 'click', () => {
     event(p1)
@@ -127,6 +132,14 @@ function backdropFilterAdd() {
     background.classList.add('backdrop_filter_apparition')
 }
 function backdropFilterDel() {
-    background.classList.remove('background_filter_apparition')
-    background.classList.add('background_filter_disparition')
+    background.classList.remove('backdrop_filter_apparition')
+    background.classList.add('backdrop_filter_disparition')
+}
+function blurOn(appletName) {
+    appletName.classList.remove('blur_off')
+    appletName.classList.add('blur_on')
+}
+function blurOff(appletName) {
+    appletName.classList.remove('blur_on')
+    appletName.classList.add('blur_off')
 }

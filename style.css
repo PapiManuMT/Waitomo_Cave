@@ -101,7 +101,7 @@ body {
     transition: transform 2s ease;
 }
 #select_page {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -300,7 +300,16 @@ input {
     animation: element_droite_disparition 750ms forwards;
 }
 .backdrop_filter_apparition {
-    animation: backdrop_filter 750ms forwards;
+    animation: backdrop_filter_apparition 750ms forwards;
+}
+.backdrop_filter_disparition {
+    animation: backdrop_filter_disparition 750ms forwards;
+}
+.blur_on {
+    animation: image_background_changer_blur 750ms forwards;
+}
+.blur_off {
+    animation: image_background_changer_noblur 750ms forwards;
 }
 
 @keyframes fondu_disparition {
@@ -325,26 +334,26 @@ input {
     to {
         opacity: 1;
         display: flex;
-        backdrop-filter: blur(100px);
-        background-color: rgba(0, 0, 0, 0.315);
+        /*backdrop-filter: blur(100px);*/
+        /*background-color: rgba(0, 0, 0, 0.315);*/
     }
     from {
         opacity: 0;
-        backdrop-filter: blur(100px);
-        background-color: rgba(0, 0, 0, 0.315);
+        /*backdrop-filter: blur(100px);*/
+        /*background-color: rgba(0, 0, 0, 0.315);*/
     }
 }
 @keyframes fondu_content_disparition {
     from {
         opacity: 1;
         display: flex;
-        backdrop-filter: blur(100px);
-        background-color: rgba(0, 0, 0, 0.315);
+        /*backdrop-filter: blur(100px);*/
+        /*background-color: rgba(0, 0, 0, 0.315);*/
     }
     to {
         opacity: 0;
-        backdrop-filter: blur(100px);
-        background-color: rgba(0, 0, 0, 0.315);
+        /*backdrop-filter: blur(100px);*/
+        /*background-color: rgba(0, 0, 0, 0.315);*/
     }
 }
 @keyframes deplacement_gauche_apparition {
@@ -399,7 +408,7 @@ input {
     }
     to {
         background-color: rgba(0, 0, 0, 0.315);
-        backdrop-filter: blur(100px);
+        /*backdrop-filter: blur(100px);*/
     }
 }
 @keyframes backdrop_filter_disparition {
@@ -408,6 +417,38 @@ input {
     }
     from {
         background-color: rgba(0, 0, 0, 0.315);
-        backdrop-filter: blur(100px);
+        /*backdrop-filter: blur(100px);*/
+    }
+}
+@keyframes image_background_changer_blur {
+    from {
+        background: url(file/waitomo-glowworm-grottes-une.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    to {
+        background: url(file/waitomo-glowworm-grottes-une-flou.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+@keyframes image_background_changer_noblur {
+    to {
+        background: url(file/waitomo-glowworm-grottes-une.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    from {
+        background: url(file/waitomo-glowworm-grottes-une-flou.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
     }
 }
