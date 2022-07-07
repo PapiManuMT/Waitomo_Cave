@@ -14,7 +14,7 @@ body {
 }
 
 #content {
-    background: url(file/waitomo-glowworm-grottes-une.jpg);
+    background: url(file/waitomo-glowworm-grottes-une.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -423,14 +423,14 @@ input {
 }
 @keyframes image_background_changer_blur {
     from {
-        background: url(file/waitomo-glowworm-grottes-une.jpg);
+        background: url(file/waitomo-glowworm-grottes-une.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
     }
     to {
-        background: url(file/waitomo-glowworm-grottes-une-flou.jpg);
+        background: url(file/waitomo-glowworm-grottes-une-flou.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -439,14 +439,14 @@ input {
 }
 @keyframes image_background_changer_noblur {
     to {
-        background: url(file/waitomo-glowworm-grottes-une.jpg);
+        background: url(file/waitomo-glowworm-grottes-une.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
     }
     from {
-        background: url(file/waitomo-glowworm-grottes-une-flou.jpg);
+        background: url(file/waitomo-glowworm-grottes-une-flou.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
