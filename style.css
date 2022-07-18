@@ -87,7 +87,7 @@ body {
     border: none;
     cursor: pointer;
     background: linear-gradient(90deg, #00B0A6 2.5%, #1DF8FA 100%);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     border-radius: 10px;
     height: 63px;
     width: 260px;
