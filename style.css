@@ -195,7 +195,7 @@ body {
     align-items: center;
 }
 #footer_background {
-    width: 80%;
+    width: 100%;
     display: flex;
     padding: 2.5rem;
 }

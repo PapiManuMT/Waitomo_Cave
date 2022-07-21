@@ -1,8 +1,10 @@
+.background {display: none}
 .checkbox {display: none;}
 .button {display: none;}
 .nav {display: none;}
 
 @media screen and (max-width: 990px) {
+    .background {display: flex}
     .checkbox {display: unset;}
     .button {display: unset;}
     .nav {display: unset;}

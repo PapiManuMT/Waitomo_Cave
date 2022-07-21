@@ -36,6 +36,7 @@ function start() {
     classList_footer(footerBackground)
 }
 start()
+
 function fButton() {
     page.forEach((pages, index) => {
         accueil.classList.remove("accueil_open")
