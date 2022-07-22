@@ -1,4 +1,4 @@
-console.log("😎<<--PapiScript-->>")
+ console.log("😎<<--PapiScript-->>")
 
 const background = document.getElementById('background')
 const content = document.getElementById('content')

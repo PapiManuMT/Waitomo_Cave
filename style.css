@@ -13,6 +13,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+noscript {
+
+}
+
 #content {
     background: url(file/waitomo-glowworm-grottes-une.webp);
     background-repeat: no-repeat;
