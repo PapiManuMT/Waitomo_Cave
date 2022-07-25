@@ -51,7 +51,8 @@
         position: fixed;
         top: 90vh;
         right: 4vw;
-        background-image: radial-gradient(#00504e, black);
+        background-color: rgba(0, 0, 0, 0.57);
+        filter: blur(10px);
         z-index: 1000;
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     }
