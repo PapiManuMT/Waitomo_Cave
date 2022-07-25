@@ -13,10 +13,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-noscript {
-
-}
-
 #content {
     background: url(file/waitomo-glowworm-grottes-une.webp);
     background-repeat: no-repeat;
@@ -241,7 +237,7 @@ input {
     background-color: #505050;
     border: none;
     margin-top: 40px;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
 }
 #input_email {
@@ -257,6 +253,7 @@ input {
     display: flex;
     font-weight: bold;
     border-radius: 0 10px 10px 0;
+    padding: 0 20px 0 20px;
     transition: all 0.3s ease-in-out;
 }
 #submit:hover {
