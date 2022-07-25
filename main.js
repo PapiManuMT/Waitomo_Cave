@@ -1,4 +1,4 @@
-console.log("😎<<--PapiScript-->>")
+ console.log("😎<<--PapiScript-->>")
 
 const background = document.getElementById('background')
 const content = document.getElementById('content')
@@ -36,6 +36,7 @@ function start() {
     classList_footer(footerBackground)
 }
 start()
+
 function fButton() {
     page.forEach((pages, index) => {
         accueil.classList.remove("accueil_open")

@@ -13,6 +13,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+noscript {
+
+}
+
 #content {
     background: url(file/waitomo-glowworm-grottes-une.webp);
     background-repeat: no-repeat;
@@ -87,7 +91,7 @@ body {
     border: none;
     cursor: pointer;
     background: linear-gradient(90deg, #00B0A6 2.5%, #1DF8FA 100%);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     border-radius: 10px;
     height: 63px;
     width: 260px;
@@ -145,16 +149,16 @@ body {
     color: var(--color-white);
 }
 .page > img {
-    width: 60%;
-    height: auto;
+    width: 20%;
+    box-sizing: border-box;
     box-shadow: 0px 10px 30px 10px #00000080;
     transition: all 0.3s ease-in-out;
     margin-top: 80px;
     margin-bottom: 0;
-    width: 20%;
 }
 .page > img:hover {
-    box-shadow: 10px 30px 75px 30px #118d8f46;
+    box-shadow: 10px 20px 45px 20px #118d8f46;
+    width: 20.5%;
 }
 .page > h2 {
     font-size: 52px;
@@ -190,12 +194,11 @@ body {
 
 #footer {
     color: white;
-    display: flex;
     justify-content: center;
     align-items: center;
+    height: 89vh;
 }
 #footer_background {
-    width: 80%;
     display: flex;
     padding: 2.5rem;
 }
@@ -242,8 +245,10 @@ input {
     color: white;
 }
 #input_email {
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 10px 0 0 10px;
+    width: 60%;
 }
 #submit {
     background-color: #00afa6;

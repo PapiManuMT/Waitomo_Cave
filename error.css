@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#content {
+    display: none;
+}
+noscript {
+    padding: 0 20% 0 20%;
+}
+noscript > h1 {
+    color: #e73636;
+    font-size: 48px;
+}
+noscript > p {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20%;
+}
+noscript > a {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+.error {
+    animation: appdpp 1s ease-in-out infinite alternate;
+}
+
+@keyframes appdpp {
+    from {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
+    }
+}
