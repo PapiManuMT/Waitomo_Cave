@@ -17,7 +17,14 @@ const accueil = document.getElementById('accueil');
 const selectPage = document.getElementById('select_page');
 const bp1Access = document.getElementById("b_page_1_access")
 const bp2Access = document.getElementById("b_page_2_access")
-const bp3Access = document.getElementById("b_page_3_access")
+const bp3Access = document.getElementById("b_page_3_access");
+
+const checkbox = document.getElementById("navi-toggle")
+const l1 = document.getElementById("l1");
+ const l2 = document.getElementById("l2");
+ const l3 = document.getElementById("l3");
+ const l4 = document.getElementById("l4");
+ const l5 = document.getElementById("l5");
 
 const p1 = document.getElementById('p1')
 const p2 = document.getElementById('p2')
@@ -91,6 +98,49 @@ bAbout.addEventListener('click', () => {
     blurOn(content)
 
 })
+
+ l1.addEventListener('click', () => {
+     fButton()
+     accueil.classList.remove("accueil_close")
+     accueil.classList.add("accueil_open")
+     setTimeout(displayFlex, 1500, accueil)
+     bgChangerOff(background)
+     blurOff(content)
+     checkbox.checked = false
+ })
+ l2.addEventListener('click', () => {
+     fButton()
+     classList(p1)
+     setTimeout(displayFlex, 1500, p1)
+     bgChangerOn(background)
+     blurOn(content)
+     checkbox.checked = false
+ })
+ l3.addEventListener('click', () => {
+     fButton()
+     classList(p2)
+     setTimeout(displayFlex, 1500, p2)
+     bgChangerOn(background)
+     blurOn(content)
+     checkbox.checked = false
+ })
+ l4.addEventListener('click', () => {
+     fButton()
+     classList(p3)
+     setTimeout(displayFlex, 1500, p3)
+     bgChangerOn(background)
+     blurOn(content)
+     checkbox.checked = false
+ })
+ l5.addEventListener('click', () => {
+     fButton()
+     classList(footer)
+     setTimeout(displayFlex, 1500, footer)
+     bgChangerOn(background)
+     blurOn(content)
+     checkbox.checked = false
+
+ })
 
 homePageButton.addEventListener('click', () => {
     accueil.classList.remove('accueil_open');
