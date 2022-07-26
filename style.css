@@ -87,8 +87,10 @@ body {
 #home_page_button {
     border: none;
     cursor: pointer;
-    background: linear-gradient(90deg, #00B0A6 2.5%, #1DF8FA 100%);
-    transition: all 0.3s ease-in-out;
+    background-color: #00b0a6;
+    background: linear-gradient(45deg, rgba(0, 176, 166, 0) 2.5%, #1DF8FA 100%);
+    background-size: 300%;
+    transition: all 300ms ease-in-out;
     border-radius: 10px;
     height: 63px;
     width: 260px;
@@ -97,11 +99,11 @@ body {
     font-weight: bold;
     justify-content: space-between;
     cursor: pointer;
+    animation: gradient 2s linear infinite;
+    animation-direction: alternate;
 }
 #home_page_button:hover {
-    background: linear-gradient(90deg, #1df8fa 2.5%, #00afa6 100%);
-    transforme: translateX(30px) ;
-    transition: transform 2s ease;
+    background-color: #1DF8FA;
 }
 #select_page {
     height: 80vh;
@@ -256,6 +258,7 @@ input {
     border-radius: 0 10px 10px 0;
     padding: 0 20px 0 20px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 #submit:hover {
     background-color: white;
@@ -314,6 +317,11 @@ input {
 }
 .blur_off {
     animation: image_background_changer_noblur 750ms forwards;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
 }
 
 @keyframes fondu_disparition {
