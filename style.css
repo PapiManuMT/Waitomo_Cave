@@ -83,6 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 #home_page_button {
     border: none;
