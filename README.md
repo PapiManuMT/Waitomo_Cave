@@ -1,5 +1,7 @@
 # Waitomo_Cave
 
+## Markdown non mis a jour car je meconcentre sur mon projet
+
 ## Renseignement sur le projet
 ### Les liens utiliser
 Site officiel de l'agence touristique  
@@ -18,15 +20,3 @@ https://www.waitomo.com/
 >
 >- **Atlas du monde :**  
   https://linqstor.com/environment/11877.html?amp=1  
-
-
-## Paléte de couleur  
-
-><img src="img_markdown/color_palete.jpg">  
-
-><img src="img_markdown/shiny_green.jpg">  
-
-><img src="img_markdown/palete/Palete.jpg">  
-
-Palète selectionner en fonction des couleur principales de l'image  
-
