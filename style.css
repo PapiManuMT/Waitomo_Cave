@@ -196,11 +196,11 @@ body {
     color: white;
     justify-content: center;
     align-items: center;
-    height: 89vh;
 }
 #footer_background {
     display: flex;
-    padding: 2.5rem;
+    padding: 2rem;
+
 }
 #g_footer {
     display: flex;
