@@ -199,7 +199,8 @@ body {
 }
 #footer_background {
     display: flex;
-    padding: 2rem;
+    padding: 1.5rem;
+    height: 84vh;
 
 }
 #g_footer {
