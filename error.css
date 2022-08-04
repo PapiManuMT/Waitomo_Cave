@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
     width: 100vw;
     height: 100vh;
@@ -7,23 +9,24 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 #content {
     display: none;
 }
-noscript {
+#noscript {
     padding: 0 20% 0 20%;
 }
-noscript > h1 {
+#noscript > h1 {
     color: #e73636;
     font-size: 48px;
 }
-noscript > p {
+#noscript > p {
     color: white;
     font-size: 32px;
     margin-bottom: 20%;
 }
-noscript > a {
+#noscript > a {
     color: white;
     font-weight: bold;
     font-size: 24px;

@@ -1,5 +1,7 @@
  console.log("😎<<--PapiScript-->>")
 
+ let noscript = document.getElementById("linkcss")
+
 const background = document.getElementById('background')
 const content = document.getElementById('content')
 
@@ -42,6 +44,7 @@ function start() {
     displayNone(footer)
     classList_footer(footerBackground)
 }
+noscripts()
 start()
 
 function fButton() {
@@ -199,4 +202,9 @@ function blurOn(appletName) {
 function blurOff(appletName) {
     appletName.classList.remove('blur_on')
     appletName.classList.add('blur_off')
+}
+
+// Alternative a la balise noscript de html qui ne fonctionne pas avec les extensions noscript
+function noscripts() {
+    noscript.setAttribute("href", "style.css")
 }
