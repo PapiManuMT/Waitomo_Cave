@@ -1,6 +1,7 @@
  console.log("😎<<--PapiScript-->>")
 
  let noscript = document.getElementById("linkcss")
+ let progress = document.getElementById("progress")
 
 const background = document.getElementById('background')
 const content = document.getElementById('content')
@@ -43,9 +44,10 @@ function start() {
     })
     displayNone(footer)
     classList_footer(footerBackground)
+    noscripts()
+    setTimeout(displayNone, 3000, progress)
 }
-noscripts()
-start()
+setTimeout(start, 1300)
 
 function fButton() {
     page.forEach((pages, index) => {

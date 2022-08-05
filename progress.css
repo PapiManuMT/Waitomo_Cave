@@ -1,0 +1,64 @@
+#progress {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    color: white;
+    text-align: center;
+    background-image: url("file/waitomo-glowworm-grottes-une-flou.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: preloader 2s forwards;
+    animation-delay: 1s;
+}
+#progress_bg {
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progress_bg > h1 {
+    font-size: 60px;
+    color: #1df8fa;
+}
+
+/*loader image */
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #1df8fa;
+    border-color: #1df8fa transparent #1df8fa transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*fin*/
+@keyframes preloader {
+    0% {
+        opacity: 200%;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
