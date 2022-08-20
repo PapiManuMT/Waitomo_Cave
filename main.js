@@ -3,6 +3,7 @@
  let noscript = document.getElementById("linkcss")
  let progress = document.getElementById("progress")
 
+ const errNoscript = document.getElementById("noscript")
 const background = document.getElementById('background')
 const content = document.getElementById('content')
 
@@ -38,6 +39,7 @@ const footer = document.getElementById('footer')
 const footerBackground= document.getElementById('footer_background')
 
 function start() {
+    displayNone(errNoscript);
     displayNone(selectPage)
     page.forEach((pages ) => {
         displayNone(pages)
